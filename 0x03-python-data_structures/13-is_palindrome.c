@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 
 int length_of_list(listint_t **head);
 listint_t *get_node_at_index(listint_t **head, int index);
@@ -24,7 +23,6 @@ int is_palindrome(listint_t **head)
 		return (1);
 
 	len = length_of_list(head);
-	printf("len: %d\n", len);
 	current = *head;
 
 	for (i = 0; i <= (len - 1) / 2; i++)
