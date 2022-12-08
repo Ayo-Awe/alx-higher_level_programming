@@ -10,17 +10,12 @@ def roman_to_int(roman_string):
     previous_token = None
 
     for token in roman_string[::-1]:
-        if previous_token == None:
+        if previous_token is None:
             num += numerals[token]
             previous_token = token
         else:
             # Subtraction notation
             if (numerals[previous_token] > numerals[token]):
-
-                # Invalid roman string
-                if numerals[previous_token]/numerals[token] > 10:
-                    return 0
-
                 # Subtract value
                 num -= numerals[token]
             else:
