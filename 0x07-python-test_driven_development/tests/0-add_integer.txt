@@ -1,0 +1,24 @@
+Test file for ``Add integer Module``
+===================================
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(3, 6)
+9
+>>> add_integer(3)
+101
+>>> add_integer(3.0, 40)
+43
+>>> add_integer(3.8, 40)
+43
+>>> add_integer('a', 40)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+>>> add_integer(2, 'b')
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+>>> add_integer(None)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
