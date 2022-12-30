@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Add Integer Module"""
+"""Add Integer Module
+
+    This Module contains code for the add integer task on ALX
+"""
 
 
 def add_integer(a, b=98):
