@@ -1,0 +1,27 @@
+Test file for ``Add integer Module``
+===================================
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("Hello","World")
+My name is Hello World
+>>> say_my_name("Benjamin","Franklin")
+My name is Benjamin Franklin
+>>> say_my_name("John")
+My name is John 
+>>> say_my_name(None)
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+>>> say_my_name(3)
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+>>> say_my_name("John", 3)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
+>>> say_my_name([], 3)
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+
