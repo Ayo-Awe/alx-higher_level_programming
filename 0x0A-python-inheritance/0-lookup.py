@@ -3,6 +3,3 @@
 def lookup(obj):
     attributes = dir(obj)
     return attributes
-
-
-lookup(int)
