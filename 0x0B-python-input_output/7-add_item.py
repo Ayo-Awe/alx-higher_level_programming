@@ -18,7 +18,7 @@ args = sys.argv[1:]
 json_list = None
 try:
     json_list = load_from_json_file(filename)
-except:
+except Exception:
     json_list = []
 
 # Append new args and json_list to new list
