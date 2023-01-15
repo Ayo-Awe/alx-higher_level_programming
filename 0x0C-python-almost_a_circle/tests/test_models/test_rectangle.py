@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Base Test Module
 """
 import unittest
@@ -284,3 +285,12 @@ class TestRectangleClass(unittest.TestCase):
         with self.assertRaises(AttributeError):
             rect_1.update(fake_atr=2)
             rect_1.fake_atr
+
+    def test_to_dictionary(self):
+        rect = Rectangle(2, 3)
+        rect_dict = rect.to_dictionary()
+
+        self.assertEqual(rect_dict["width"], 2)
+        self.assertEqual(rect_dict["height"], 3)
+        self.assertEqual(rect_dict["x"], 0)
+        self.assertEqual(rect_dict["y"], 0)
