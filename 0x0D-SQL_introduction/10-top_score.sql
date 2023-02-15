@@ -1,3 +1,3 @@
--- selects all rows from second_table
--- and orders by id (descending order)
-select score, name  from second_table order by score desc;
+-- SELECTs all rows FROM second_table
+-- and ORDERs BY id (DESCending ORDER)
+SELECT score, name  FROM second_table ORDER BY score DESC;

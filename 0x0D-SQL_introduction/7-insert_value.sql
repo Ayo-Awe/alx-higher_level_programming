@@ -1,2 +1,2 @@
 -- inserts a new row into first_table
-insert into first_table values(89, "Best School");
+INSERT INTO first_table VALUES(89, "Best School");

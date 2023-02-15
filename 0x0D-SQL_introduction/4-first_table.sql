@@ -1,2 +1,2 @@
--- creates a new table with id and name columns
-create table if not exists first_table (id int, name varchar(256));
+-- CREATEs a new table with id and name columns
+CREATE TABLE IF NOT EXISTS first_table (id INT, name VARCHAR(256));

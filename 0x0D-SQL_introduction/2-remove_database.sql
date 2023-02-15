@@ -1,2 +1,2 @@
--- deletes hbtn_0c_0 if it exist
-drop database if exists hbtn_0c_0;
+-- deletes hbtn_0c_0 IF it exist
+DROP DATABASE IF EXISTS hbtn_0c_0;

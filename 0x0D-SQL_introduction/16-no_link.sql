@@ -1,2 +1,2 @@
--- lists all records of the table second_table of the database
-select score, name from second_table where name is not null order by score desc;
+-- lists all records of the table second_table of the DATABASE
+SELECT score, name FROM second_table WHERE name is NOT null ORDER BY score DESC;

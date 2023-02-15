@@ -1,3 +1,3 @@
--- selects all rows from second_table where score >= 10
--- and orders by id (descending order)
-select score, name from second_table where score>=10  order by score desc;
+-- SELECTs all rows FROM second_table WHERE score >= 10
+-- and ORDERs BY id (DESCending ORDER)
+SELECT score, name FROM second_table WHERE score>=10  ORDER BY score DESC;
