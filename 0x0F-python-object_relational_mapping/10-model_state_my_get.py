@@ -26,6 +26,6 @@ if __name__ == "__main__":
     if match:
         print(match.id)
     else:
-        print("Not Found")
+        print("Not found")
 
     session.close()
