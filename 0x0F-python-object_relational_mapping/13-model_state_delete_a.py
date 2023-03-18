@@ -8,6 +8,7 @@ Args:
     3: <database>
 """
 from model_state import State, Base
+from model_city import City
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
