@@ -24,6 +24,6 @@ if __name__ == "__main__":
         City).order_by(City.id)
 
     for city in cities:
-        print(city)
+        print(f"{city[0]}: ({city[1]}) {city[2]}")
 
     session.close()
