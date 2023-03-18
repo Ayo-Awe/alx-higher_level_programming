@@ -19,7 +19,8 @@ def filter_states():
         }
         conn = MySQLdb.connect(**connect_options)
         cursor = conn.cursor()
-        query = "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC"
+        query = "SELECT * FROM states WHERE name LIKE BINARY \
+            'N%' ORDER BY id ASC"
         cursor.execute(query)
         results = cursor.fetchall()
 
