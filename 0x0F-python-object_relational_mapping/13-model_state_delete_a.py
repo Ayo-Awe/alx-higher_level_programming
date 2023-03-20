@@ -20,8 +20,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     session = Session(bind=engine)
 
-    session.query(State).filter(State.name.ilike(
-        "%a%")).delete(synchronize_session="auto")
+    results = session.query(State).filter(State.name.ilike(
+        "%a%"))
+    for result in results:
+        session.delete(result)
     session.commit()
 
     session.close()
