@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""Script to parse json response
-from a server
+"""Script to format json response
 """
 import requests
 import sys
 
 
-def post_email():
-    """Send email to the given url
-    using python requests package
+def format_json():
+    """Format JSON response as
+    required
     """
     try:
         url = "http://0.0.0.0:5000/search_user"
@@ -23,9 +22,9 @@ def post_email():
             print("No result")
         else:
             print(f"[{body.get('id')}] {body.get('name')}")
-    except requests.exceptions.JSONDecodeError:
+    except Exception:
         print("Not a valid JSON")
 
 
 if __name__ == "__main__":
-    post_email()
+    format_json()
