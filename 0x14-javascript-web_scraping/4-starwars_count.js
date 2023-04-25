@@ -6,10 +6,13 @@ const url = process.argv[2];
 request.get({ url }, (error, response, body) => {
   if (!error && response.statusCode === 200) {
     const data = JSON.parse(body);
-    const wedge = 'https://swapi-api.alx-tools.com/api/people/18/';
 
     const wedgeCount = data.results.reduce((prev, curr) => {
-      if (curr.characters.includes(wedge)) {
+      const wedge = curr.characters.find((value) =>
+        value.includes('/people/18')
+      );
+
+      if (wedge) {
         return prev + 1;
       } else {
         return prev;
