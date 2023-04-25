@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const request = require("request");
-const util = require("node:util");
+const request = require('request');
+const util = require('util');
 
 const movieId = process.argv[2];
-const filmsUrl = "https://swapi-api.alx-tools.com/api/films/" + movieId;
-const peopleUrl = "https://swapi-api.alx-tools.com/api/people/";
+const filmsUrl = 'https://swapi-api.alx-tools.com/api/films/' + movieId;
+const peopleUrl = 'https://swapi-api.alx-tools.com/api/people/';
 
 const requestAsync = util.promisify(request);
 
@@ -22,8 +22,8 @@ const requestAsync = util.promisify(request);
   });
 })();
 
-async function getPeopleData() {
-  let peopleData = [];
+async function getPeopleData () {
+  const peopleData = [];
   let next = peopleUrl;
 
   while (next) {
